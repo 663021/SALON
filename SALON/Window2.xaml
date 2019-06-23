@@ -1,0 +1,33 @@
+﻿<Window x:Class="SALON.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SALON"
+        mc:Ignorable="d"
+        Title="MainWindow" MaxHeight="572.22"  MinHeight="572.22" Height="572.22" WindowStartupLocation="CenterScreen" MinWidth="287.216" MaxWidth="287.216"  Width="287.519" Background="#FF323232" ResizeMode="NoResize" WindowStyle="None" Loaded="Window_Loaded">
+    <Grid Background="#FF412244">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="290"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="label" Content="Регистрация"  HorizontalAlignment="Center" Margin="83,25,51,0" VerticalAlignment="Top" Grid.Column="0" FontSize="18" Foreground="White" Width="156"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="43,126,0,0" TextWrapping="Wrap" Text="" Grid.Column="0" VerticalAlignment="Top" Width="200" Foreground="#FF231616" TextChanged="TextBox_TextChanged"/>
+        <Label x:Name="label_Copy" Content="ФИО" HorizontalAlignment="Left" Margin="43,98,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy1" Content="Логин" HorizontalAlignment="Left" Margin="43,158,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="button" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="44,452,0,0" Grid.Column="0" VerticalAlignment="Top" Width="200" Foreground="#FF231616" Click="Button_Click" />
+        <Label x:Name="label_Copy2" Content="© SALON 2019" HorizontalAlignment="Left" Margin="100,533,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="#FF9276DE" FontSize="12"/>
+        <Label x:Name="label_Copy3" Content="" HorizontalAlignment="Left" Margin="10,519,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="#FF9276DE" FontSize="12" Width="270" Background="#FF9276DE" Height="1"/>
+        <Label x:Name="label_Copy4" Content="" HorizontalAlignment="Left" Margin="10,80,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="#FF9276DE" FontSize="12" Width="270" Background="#FF9276DE" Height="1"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="43,191,0,0" TextWrapping="Wrap" Text="" Grid.Column="0" VerticalAlignment="Top" Width="200" Foreground="#FF231616" TextChanged="TextBox_TextChanged"/>
+        <Label x:Name="label_Copy5" Content="Пароль" HorizontalAlignment="Left" Margin="44,224,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="label_Copy6" Content="Повторите пароль" HorizontalAlignment="Left" Margin="44,293,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="White"/>
+        <PasswordBox x:Name="passwordBox_Copy" HorizontalAlignment="Left" Margin="44,321,0,0" Grid.Column="0" VerticalAlignment="Top" Width="200" Foreground="#FF231616" PasswordChanged="PasswordBox_Copy1_PasswordChanged" />
+        <PasswordBox x:Name="passwordBox_Copy1" HorizontalAlignment="Left" Margin="43,255,0,0" Grid.Column="0" VerticalAlignment="Top" Width="200" Foreground="#FF231616" PasswordChanged="PasswordBox_Copy1_PasswordChanged" />
+        <Image x:Name="image_log_out" HorizontalAlignment="Left" Height="33" Margin="25,25,0,0" VerticalAlignment="Top" Width="33" Stretch="Fill" MouseEnter="Image_log_out_MouseEnter" MouseLeave="Image_log_out_MouseLeave" MouseDown="Image_log_out_MouseDown"/>
+        <Image x:Name="image_close" HorizontalAlignment="Left" Height="31" Margin="247,28,0,0" VerticalAlignment="Top" Width="31" Stretch="Fill" MouseEnter="Image_log_out_MouseEnter1" MouseLeave="Image_log_out_MouseLeave1" MouseDown="Image_log_out_MouseDown1"/>
+        <Image x:Name="image_drop" HorizontalAlignment="Left" Height="27" Margin="207,31,0,0" VerticalAlignment="Top" Width="27" Stretch="Fill" MouseEnter="Image_log_out_MouseEnter_drop" MouseLeave="Image_log_out_MouseLeave_drop" MouseDown="Image_log_out_MouseDown_drop"/>
+
+    </Grid>
+</Window>

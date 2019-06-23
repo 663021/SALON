@@ -1,0 +1,36 @@
+﻿<Window x:Class="SALON.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SALON"
+        mc:Ignorable="d"
+        Title="Window1" Height="776.175" Width="653.02" Background="#FF323232" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Background="#FF412244">
+        <Label x:Name="label" Content="Работа с персоналом"  HorizontalAlignment="Center" Margin="232,23,235,0" VerticalAlignment="Top" Grid.Column="0" FontSize="18" Foreground="White" Width="186"/>
+        <Label x:Name="label_Copy2" Content="© SALON 2019" HorizontalAlignment="Left" Margin="278,735,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="#FF9276DE" FontSize="12" Background="{x:Null}"/>
+        <Label x:Name="label_Copy3" Content="" HorizontalAlignment="Left" Margin="10,719,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="#FF9276DE" FontSize="12" Width="630" Background="#FF9276DE" Height="1"/>
+        <Label x:Name="label_Copy4" Content="" HorizontalAlignment="Left" Margin="10,80,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="#FF9276DE" FontSize="12" Width="630" Background="#FF9276DE" Height="1"/>
+
+        <Image x:Name="image_log_out" HorizontalAlignment="Left" Height="32" Margin="80,25,0,0" VerticalAlignment="Top" Width="34" Stretch="Fill" MouseEnter="Image_log_out_MouseEnter" MouseLeave="Image_log_out_MouseLeave" MouseDown="Image_log_out_MouseDown"/>
+        <Image x:Name="image_close" HorizontalAlignment="Left" Height="33" Margin="590,25,0,0" VerticalAlignment="Top" Width="33" Stretch="Fill" MouseEnter="Image_log_out_MouseEnter1" MouseLeave="Image_log_out_MouseLeave1" MouseDown="Image_log_out_MouseDown1"/>
+        <Image x:Name="image_back" HorizontalAlignment="Left" Height="33" Margin="25,25,0,0" VerticalAlignment="Top" Width="33" Stretch="Fill" MouseEnter="Image_log_out_MouseEnter2" MouseLeave="Image_log_out_MouseLeave2" MouseDown="Image_log_out_MouseDown2"/>
+
+        <DataGrid x:Name="DataGrid1" HorizontalAlignment="Left" Height="418" Margin="23,270,0,0" VerticalAlignment="Top" Width="606" FontSize="14" IsReadOnly="True" RowBackground="#FFDDDDDD" AlternatingRowBackground="#FFDDDDDD" Foreground="White" HorizontalGridLinesBrush="#FFF5F5FA" VerticalGridLinesBrush="#FF2B172C" Background="{x:Null}">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Уволить работника" Click="Button_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="226,142,0,0" TextWrapping="Wrap" Text="" Grid.Column="0" VerticalAlignment="Top" Width="200" Foreground="#FF231616" TextChanged="TextBox_TextChanged"/>
+        <Label x:Name="label_Copy" Content="ФИО" HorizontalAlignment="Left" Margin="298,104,0,0" Grid.Column="0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="button" Content="Добавить" HorizontalAlignment="Left" Margin="226,194,0,0" Grid.Column="0" VerticalAlignment="Top" Width="200" Foreground="#FF231616" Click="Button_Click_1" />
+        <Image x:Name="image_drop" HorizontalAlignment="Left" Height="27" Margin="544,28,0,0" VerticalAlignment="Top" Width="28" Stretch="Fill" MouseEnter="Image_log_out_MouseEnter_drop" MouseLeave="Image_log_out_MouseLeave_drop" MouseDown="Image_log_out_MouseDown_drop"/>
+
+    </Grid>
+</Window>
